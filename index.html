@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q2-FA1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Usman Plazo, Zacchaeus Torreon">
+        <title>PSHS - CRC</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+   .hero{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75));
+        position: relative;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5vh 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 10vh;
+        transition:0.5s;
+    }
+    .logo:hover{
+        transform: rotate(360deg);
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 4vh;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #66FCF1;
+        font-size: 3vh;
+        transition: 0.5s;
+    }
+    nav ul li a:hover{
+        -webkit-text-stroke: 3px #45A29E;
+        color: transparent;
+    }
+    .content{
+        text-align: center;
+    }
+    .content h1{
+        font-size: 9vh;
+        color: #66FCF1;
+        font-weight: 600;
+        transition: 1s;
+    }
+    .content h1:hover{
+        
+        transform: scale(0.9);
+        -webkit-text-stroke: 3px #C5C6C7;
+        color: transparent;
+    }
+    .content a{
+        text-decoration: none;
+        display: inline-block;
+        color: #66FCF1;
+        font-size: 24px;
+        border: 2px solid #C5C6C7;
+        padding: 14px 70px;
+        border-radius: 50px;
+        margin-top: 20px;
+        transition: 1s;
+    }
+    .content a:hover{
+        transform: scale(1.2);
+        -webkit-text-stroke: 3px #C5C6C7;
+        color: transparent;
+    }
+    .BGV{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    @media (min-aspect-ratio: 16/9){
+        .back-video{
+        width: 100%;
+        height: auto;
+    }
+    }
+    @media (max-aspect-ratio: 16/9){
+        .back-video{
+        width: auto;
+        height: 100%;
+    }
+    }
+</style>
+</head>
+<body>
+    <div class = "hero">
+        <video autoplay loop muted plays-inline class = "BGV">
+            <source src = "CRC DS.mp4">
+        </video>
+        <nav>
+            <img src = "Logo.png" class = "logo">
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="map.html">Map</a></li>
+                    <li ><a href="newspaper.html">Events</a></li>
+                    <li ><a href="achievements.html">Achievements</a></li>
+                    <li ><a href="calendar.html">Calendar</a></li>
+                    <li ><a href="aboutUs.html">About Us</a></li>
+                </ul>
+        </nav>
+        <div class = "content">
+            <h1> Welcome to Philippine Science High School</h1>
+            <h1> Caraga Region Campus</h1>
+                <a href = "map.html">Begin Exploring</a>
+        </div>
+    </div>
+</body>
+
+</html>

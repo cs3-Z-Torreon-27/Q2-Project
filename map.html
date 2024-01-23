@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q2-FA1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Usman Plazo, Zacchaeus Torreon">
+        <title>PSHS-CRC</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .BGC{
+        width: 100%;
+        height: 110vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(CRC.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5vh 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 10vh;
+        transition:0.5s;
+    }
+    
+    .logo:hover{
+        transform: rotate(360deg);
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 4vh;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #66FCF1;
+        font-size: 3vh;
+        transition: 0.5s;
+    }
+    nav ul li a:hover{
+        -webkit-text-stroke: 3px #45A29E;
+        color: transparent;
+    }
+    #ham{
+        top:20%;
+    }
+    .map{
+        opacity: 0;
+    }
+    a .map:link{
+        opacity: 0;
+    }
+    a .map:visited{
+        opacity: 0;
+    }
+    a .map:hover{
+        opacity: 0.15;
+    }
+    a .map:active{
+        opacity: 0.2;
+    }
+    #imgId{
+        position: absolute ;
+        left:5%;
+        top: 17%;
+        width:45.550%
+    }
+    #h{
+        position: absolute;
+        top: calc(19% + 66.1%); 
+        left: calc(2% + 22.5%);
+        width: 11.2%;
+    }
+    #y{
+        position: absolute;
+        top: calc(19% + 51%); 
+        left: calc(5% + 24%);
+        width: 6.90%;
+    }
+    #d{
+        position: absolute;
+        top: calc(19% + 36.1%); 
+        left: calc(5% + 20.8%);
+        width: 18.9%;
+    }
+    #r{
+        position: absolute;
+        top: calc(19% + 24.4%); 
+        left: calc(5% + 37.5%);
+        width: 5.55%;
+    }
+    #o{
+        position: absolute;
+        top: calc(19% + 9.3%); 
+        left: calc(5% + 37.15%);
+        width: 6.5%;
+    }
+    #m{
+        position: absolute;
+        top: calc(19% + 25.2%); 
+        left: calc(5% + 20.6%);
+        width: 4.0%;
+    }
+    #a{
+        position: absolute;
+        top: calc(19% + 25.9%); 
+        left: calc(5% + 23.8%);
+        width: 12.45%;
+    }
+    #g{
+        position: absolute;
+        top: calc(19% + 13.6%); 
+        left: calc(5% + 22.75%);
+        width: 13.1%;
+    }
+    #n{
+        position: absolute;
+        top: calc(19% + 1.4%); 
+        left: calc(5% + 22.3%);
+        width: 20.2%;
+    }
+    #e{
+        position: absolute;
+        top: calc(19% + -1.6%); 
+        left: calc(5%  + 16.4%);
+        width: 5.90%;
+    }
+    #t{
+        position: absolute;
+        top: calc(19% + 27.4%); 
+        left: calc(5% + .6%);
+        width: 16.8%;
+    }
+    #i{
+        position: absolute;
+        top: calc(19% + 0.9%); 
+        left: calc(5% + 5%);
+        width: 11.40%;
+    }
+    #c{
+        position: absolute;
+        top: calc(19% + 0.6%); 
+        left: calc(5% + 0.5%);
+        width: 4.60%;
+    }
+    #hambutter{
+        border: 0.3vh black solid;
+        border-radius: 0.6vh;
+        position: absolute;
+        padding-top: 3vh;
+        top: 17%;
+        width: 42%;
+        background-image: url(Chatbox.png);
+        background-size: cover;
+        transform: translateX(133%);
+        }
+    p{
+        font-size: 2.295vh;
+    }
+    h1{
+        font-size: 4.69vh;
+    }
+    h2{
+        font-size: 3.493vh;
+    }
+    h3{
+        font-size: 3.193vh;
+    }
+    a{
+        font-size: 2.295vh
+    }
+
+</style>
+</head>
+<body>
+    <div class = "BGC">
+        <nav>
+            <img src = "Logo.png" class = "logo">
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="map.html">Map</a></li>
+                    <li ><a href="newspaper.html">Events</a></li>
+                    <li ><a href="achievements.html">Achievements</a></li>
+                    <li ><a href="calendar.html">Calendar</a></li>
+                    <li ><a href="aboutUs.html">About Us</a></li>
+                </ul>
+        </nav>
+    <div id = "maped">
+        <img src="Untitled1.png" id="imgId">
+            <a onclick="displayText1()"><img id="h" src="Untitled2.png" class="map"></a>
+            <a onclick="displayText2()"><img id="y" src="Untitled3.png" class="map"></a>
+            <a onclick="displayText3()"><img id="d" src="Untitled4.png" class="map"></a>
+            <a onclick="displayText4()"><img id="r" src="Untitled5.png" class="map"></a>
+            <a  onclick="displayText5()"><img id="o" src="Untitled6.png" class="map"></a>
+            <a  onclick="displayText6()"><img id="m" src="Untitled7.png" class="map"></a>
+            <a  onclick="displayText7()"><img id="a" src="Untitled8.png" class="map"></a>
+            <a  onclick="displayText8()"><img id="g" src="Untitled9.png" class="map"></a>
+            <a  onclick="displayText9()"><img id="n" src="Untitled10.png"  class="map"></a>
+            <a  onclick="displayText10()"><img id="e" src="Untitled11.png" class="map"></a>
+            <a  onclick="displayText11()"><img id="t" src="Untitled12.png" class="map"></a>
+            <a  onclick="displayText12()"><img id="i" src="Untitled13.png" class="map"></a>
+            <a  onclick="displayText13()"><img id="c" src="Untitled14.png"  class="map"></a>
+    </div>
+    </div>
+        <div id="hambutter">
+            <h3 id="ham">WELCOME!</h3>
+            <p id="burger">The text here will change as you click each building. Have fun learning about PSHS-CRC!</p>
+            <br>
+            <p id="burber"></p>
+        </div>
+    </body>
+    <script>
+        function displayText1()
+        {   document.getElementById("ham").innerHTML = 'Admin Building';
+            document.getElementById("burger").innerHTML = 'The admin building is where the office of the campus director is located. It is where the cashier and most of the GSU offices are located. Moreover, it has the greatest view of the entire campus which would definitely put you in awe.';
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText2()
+        {   document.getElementById("ham").innerHTML = 'STEM Park';
+            document.getElementById("burger").innerHTML = 'The STEM park is where most of the scholars enjoy the view of the campus, as it is stationed in the middle of the entire campus. It highlights the smiles and joy of the scholars and is where most of the scholars socialize and relate to each other. Moreover, it is where the iconic Pisay Caraga balanghay boat is located.';
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText3()
+        {   document.getElementById("ham").innerHTML = 'Academic Building 1 & Guard House';
+            document.getElementById("burger").innerHTML = "The guardhouse is the first building you see as you enter the school. It is where students scan their IDs in the scanner to determine if they are late or present in classes. This also where parents and guardians wait for the students' dismissal.";
+            document.getElementById("burber").innerHTML = "The first floor of academic building one is where the registrar, clinic, guidance office, the SSD office, and four classrooms of the grades 7-10. This second floor is where the rest of the classrooms are located for grades 7-10. Finally, the first floor is where the audio visual room and the disciplinary office are located.";
+            document.getElementById("burber").style.display = "inline";
+        }
+        function displayText4()
+        {   document.getElementById("ham").innerHTML = 'Library';
+            document.getElementById("burger").innerHTML = 'The library is home to countless of reading books for scholars to enjoy. It is where most scholars go to comply with their assessments. Due to how quiet the library is, it helps scholars focus on the work they are doing with minimal disturbances. The library holds several events for scholars to enjoy like the weekly sudoku challenge.';
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText5()
+        {   document.getElementById("ham").innerHTML = 'Academic Building 4';
+            document.getElementById("burger").innerHTML = 'After announcing that the Caraga Region Campus will increase the amount of passers from 90-120 students, they had to make a new academic building for more classrooms. This is where the senior years, grades 11 and 12 are now located. Additionally, the offices of all the teachers are now relocated to this building, as well as the CID office.';
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText6()
+        {   document.getElementById("ham").innerHTML = 'FabLab';
+            document.getElementById("burger").innerHTML = 'The Fabrication Laboratory is where you can make almost anything that ranges from 3D printing to laser cutting. It is where the office of the science research assistant is located, and he accepts interns to help maintain and manage the equipment and provide assistance with other scholars who wants to use any equipment in the FabLab.';
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText7()
+        {   document.getElementById("ham").innerHTML = 'Academic Building 2';
+            document.getElementById("burger").innerHTML = 'The first floor of academic building two is where the computer laboratories are located, which is where students conduct their computer science classes.The academic building two second floor used to be where most of the offices of the teachers are located before being moved to academic building four. Now, it is where the AdTech room is relocated.';
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText8()
+        {   document.getElementById("ham").innerHTML = 'Academic Building 3';
+            document.getElementById("burger").innerHTML = "Acdemic building three is where all of the laboratories of the three core subjects: Biology, Chemistry, and Physics are located. In these laboratories, the laboratory equipment needed for the different core subjects are stored inside of their respective rooms for the students' use. Moreover, this is where the office of the SRA is located.";
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText9()
+        {   document.getElementById("ham").innerHTML = 'Boys Dorm';
+            document.getElementById("burger").innerHTML = ' The boys dorm is where most of the male regional scholars who lives a great distance from Butuan stay. It is their home away from home and provides them the ease of not travelling a great distance just to get to school. The dormers can come together as one for for group studies and to fill the void of their homesickness.';
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText10()
+        {   document.getElementById("ham").innerHTML = 'Canteen';
+            document.getElementById("burger").innerHTML = 'The canteen is where most of the scholars go to whenever it is lunch or snack time. The canteen offers a variety of delicious food, in which all the scholars can enjoy. It has 3 floors where the first and second floors are where the scholars eat, and the third floor is the students activity center where music class and the glee club happens.';
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText11()
+        {   document.getElementById("ham").innerHTML = 'Grandstand';
+            document.getElementById("burger").innerHTML = "The grandstand is where most of the scholars go to whenever classes are over. It is where various sports are played like volleyball, badminton, and running around the oval. Moreover, it is the place most scholars go to whenever there's a volleyball game, which usually occurs in the intrams season.";
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText12()
+        {   document.getElementById("ham").innerHTML = 'Gym';
+            document.getElementById("burger").innerHTML = "The gym is where most of the notable events occurs such as the dormers' acquaintance party and some events in STEM fest and intrams. It is also where the PE classes of the grades 7-10 happens. Overall, the gym is where almost all events circle around because of how spacious it is.";
+            document.getElementById("burber").style.display = "none";
+        }
+        function displayText13()
+        {   document.getElementById("ham").innerHTML = 'Girls Dorm';
+            document.getElementById("burger").innerHTML = 'The girls dorm is where most of the female regional scholars who lives a great distance from Butuan stay. It is their home away from home and provides them the ease of not travelling a great distance just to get to school. The dormers can come together as one for for group studies and to fill the void of their homesickness.';
+            document.getElementById("burber").style.display = "none";
+        } 
+    </script>
+</html>

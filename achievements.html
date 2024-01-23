@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q2-FA1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Usman Plazo, Zacchaeus Torreon">
+        <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        color:#66FCF1;
+    }
+    .BGC{
+        width: 100%;
+        height: 300vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(CRC.png);
+        background-size: cover;
+        background-position: center;
+    }
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 7vh 3%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 10vh;
+        transition: 0.5s;
+    }
+    .logo:hover{
+        transform: rotate(360deg);
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 3vh;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #66FCF1;
+        font-size: 3vh;
+        transition: 0.5s;
+    }
+    nav ul li a:hover{
+        -webkit-text-stroke: 3px #45A29E;
+        color: transparent;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        margin-bottom: 0.5em;
+    }
+    .title{
+        color: #66FCF1;
+        text-align: center;
+    }
+    .title p{
+        color: #66FCF1;
+        font-size: 1.3em;
+        letter-spacing: 2px;
+    }
+    .timeline{
+        margin: 5em auto;
+        max-width: 34.15em;
+    }
+    .checkpoint{
+        max-width: 34em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        position: relative;
+    }
+    .checkpoint div{
+        border: 2px solid #C5C6C7;
+        border-radius: 1em;
+        padding: 1.5em;
+    }
+    .checkpoint p{
+        line-height: 27px;
+        color: #C5C6C7;
+    }
+    .checkpoint:nth-child(odd){
+        border-left: 3px solid #C5C6C7;
+        padding-left: 3em;
+        transform: translateX(17em);
+    }
+    .checkpoint:nth-child(even){
+        border-right: 3px solid #C5C6C7;
+        padding-right: 3em;
+        transform: translateX(-16.8em);
+    }
+    .checkpoint:nth-child(odd)::before,
+    .checkpoint:nth-child(even)::before{
+        content: '';
+        background: #C5C6C7;
+        width: 3em;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .checkpoint:nth-child(odd)::before{
+        left: 0;
+    }
+    .checkpoint:nth-child(even)::before{
+        right: 0;
+    }
+    .checkpoint:nth-child(odd) div::before,
+    .checkpoint:nth-child(even) div::before{
+        content:'';
+        background: #C5C6C7;
+        box-shadow: 0 0 0.5em #0d71fc;
+        width: 0.8em;
+        height: 0.8em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    .checkpoint:nth-child(odd) div::before{
+        left:-0.5em;
+    }
+    .checkpoint:nth-child(even) div::before{
+        right:-0.5em;
+    }
+
+</style>
+</head>
+<body>
+    <div class = "BGC">
+        <nav>
+            <img src = "Logo.png" class = "logo">
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="map.html">Map</a></li>
+                    <li ><a href="newspaper.html">Events</a></li>
+                    <li ><a href="achievements.html">Achievements</a></li>
+                    <li ><a href="calendar.html">Calendar</a></li>
+                    <li ><a href="aboutUs.html">About Us</a></li>
+                </ul>
+        </nav>
+    <div class = "title">
+        <h1>Achievements</h1>
+        <p> of PSHS - CRC</p>
+    </div>
+    <div class = "timeline">
+        <div class = "checkpoint">
+            <div>
+                <h2>Indak Agham Himig Kaunlaran Music Video Competition</h2>
+                    <p> 2nd Place PSHS - CRC</p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2>2023 Gawad Alunig x Dalumat</h2>
+                    <p>Grand winner for best school based/student led Science publication - Elan Victoria Tomaneng</p>
+                    <p>Coach: Jhon Ryan Hijastro</p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2>Kids innovations challenge 4.1</h2>
+                    <p>Gold award and most innovative project- Patrick Mijares, Zacchaeus Torreon, Anne Gabrielle Escano</p>
+                    <p>Coach: Engr.Nerry C. Nunez & Lyndon R. Bermoy</p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2>Philippine international Mathematical olympiad 2023 </h2>
+                    <p>Gold - Ambrose James G. Torreon</p>
+                    <p>Gold - Hans Ethan K. Ting</p>
+                    <p>Gold - Elan Victoria G. Tomaneng</p>
+                    <p>Gold - Ruzzel Rhyann L. Ancero</p>
+                    <p>Silver - Antoine Miko A. Dellosa</p>
+                    <p>Bronze - Jehan Dave D. Martinez</p>
+                    <p>Bronze - Jian Carmelo A. Dellosa</p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2>International Science Olympiad Competition of South East Asia </h2>
+                    <p>Bronze - Mercia Ann S. Pariñas</p>
+                    <p>Bronze - Zaccaheus John G. Torreon</p>
+                    <p>Bronze - Stacey Louise A. Hurtado</p>
+                    <p>Bronze - Skye Andrei A. Padilla</p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2>Grassroots Innovation and Circular Economy Regional Level </h2>
+                    <p>First Place - Ian Anthonette Gesta and Naomi Buna</p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2>2023 Thailand International Mathematical Olympiad</h2>
+                    <p>Champion - Hans Ethan K. Ting</p>
+                    <p>Coach: Vendy Von P. Salvan </p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2>46th Mindanao Partliamentary debate championship </h2>
+                    <p>  HS Grand Champion- Zarrah Cahiles(6th best HS speaker of mindanao)</p>
+                    <p>  HS Grand Champion-Summer TOrralba(10th best HS speaker of mindanao)</p>
+                    <p>  HS Grand Finalist- Camille Idefonso</p>
+                    <p>  HS Grand Finalist- Elan Tomaneng</p>
+                    <p>  HS Semi Finalist- Sean Sanchez(overal best HS speaker of Mindanao)</p>
+                    <p>  HS Semi FInalist- Kelvin Lampon(4th Best speaker of Mindanao)</p>
+            </div>
+        </div>
+        <div class = "checkpoint">
+            <div>
+                <h2>Hong Kong International science Olympiad (heat round)</h2>
+                    <p>  Gold award - Elan Victoria G. Tomaneng </p>
+                    <p>  Gold award - Julia Cay C. Manatad </p>
+                    <p>  Gold award - Cris Adrielle C. Abrea </p>
+                    <p>  Silver Award - Alessandra Gabrielle G. Aguillar </p>
+                    <p>  Silver Award - Ambrose James Ambrose G. Torreon</p>
+                    <p>  Coach:Ann O. Tibe, Jay M, Maique, Vincent D. campos</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

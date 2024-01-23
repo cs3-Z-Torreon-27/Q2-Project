@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q2-FA1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Usman Plazo, Zacchaeus Torreon">
+        <title>PSHS-CRC</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #66FCF1;
+    }
+    .BGC{
+        width: 100%;
+        height: 150vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(CRC.png);
+        background-size: cover;
+        background-position: center;
+    }
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 7vh 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 10vh;
+        transition:0.5s;
+    }
+    .logo:hover{
+        transform: rotate(360deg);
+    }   
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 5vh;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #66FCF1;
+        font-size: 3vh;
+        transition: 0.5s;
+    }
+    nav ul li a:hover{
+        -webkit-text-stroke: 3px #45A29E;
+        color: transparent;
+    }
+    .desc1{
+        position:relative;
+        padding: 10vh;
+        margin-bottom: 10vh;
+        top: 10%;
+    }
+    .desc2{
+        position: relative;
+        padding: 100px;
+    }
+    .newspaperburger{
+        float:left;
+        border: 0.391vh solid lightblue;
+    }
+    .newspaperfries{
+        float:right;
+    }
+    p{
+        font-size: 112.5%;
+    }
+</style>
+</head>
+<body>
+    <div class = "BGC">
+        <nav>
+            <img src = "Logo.png" class = "logo">
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="map.html">Map</a></li>
+                    <li ><a href="newspaper.html">Events</a></li>
+                    <li ><a href="achievements.html">Achievements</a></li>
+                    <li ><a href="calendar.html">Calendar</a></li>
+                    <li ><a href="aboutUs.html">About Us</a></li>
+                </ul>
+        </nav>
+            <div class = "desc1">
+                <div>
+                    <video class="newspaperburger"  width="50%" poster="v2.jpg" controls>
+                        <source src= "v2.mp4">
+                    </video>
+                        <h1>Intramurals 2023</h1>
+                            <p>PSHS - CRC has recently concluded the intramurals 2023 with the theme One Piece. With numerous events for the scholars to join, they immediately shift their mindsets from focusing on their studies to putting on their A game. Intramurals continue to be one of the most anticipated events every school year, unleashing the competitiveness of every scholar with all the various events.</p>
+                            <p>One of the notable events that every scholar has their eyes on is the cosplay competition, which made its first-ever appearance in this year's intramurals. Relating to the theme, representatives of each batch are provided with a specific One Piece arc to cosplay a character in it. Another notable event that made its first-ever appearance is the cheerleading competition. The astonishing performances ignited everyone's competitiveness. With all these said, scholars underwent the first step in entering the festivities: to cheer their lungs out for their fellow batchmates.</p>
+                            <p>Intramurals are a long-awaited event for scholars to forget all about their academics for a period and unleash their competitiveness. The event brings out one of the core values scholars should have: striving for excellence. In conclusion, intramural is the time of the school year for scholars to unleash their competitiveness and enjoy the events prepared.</p>
+                </div>
+                    <div class = "desc2">   
+                        <video class = "newspaperfries" width="50%" poster="v1.jpg" controls></video> 
+                            <h1>StemFest 2023</h1>   
+                                <p>During September 28-30, Stem Fest 2023 was held in PSHS - CRC gymnasium with the theme SPECTRA. It had a lot of events for the students to participate in. Like intramurals, Stem Fest is one of the most anticipated events every school year.</p>
+                                <p>One of the STEM Fest events that is anticipated by the scholars is the Bench Yell competition. it is present every year, and representatives of each batch will compete against the other batches by sitting on the benches and presenting a yell. The bench yell ignites the competitiveness in the scholars every year when they perform their bench yell.</p>
+                                <p>Stem Fest is always an awaited event for students to have a break. It made the scholars absorb, excite, and radiate during the Stem Fest 2023 and made them enjoy the events. The event makes every batch competitive and alert when attending the stem fest because it is an event that will bring glory to their batch.</p>
+                    </div>
+            </div>
+    </div>
+</body>
+</html>
